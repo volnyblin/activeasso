@@ -248,7 +248,10 @@ input::-webkit-search-cancel-button {
   width: 45%;
   padding-top: 35px;
 }
-
+#rightcontainer p{
+  font-size: 1.2em;
+  margin: 0 0 40px 0;
+}
 
 /*--SECTIONS--*/
 
