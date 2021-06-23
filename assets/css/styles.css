@@ -293,6 +293,9 @@ img{
 .home__social-icon:hover{
   color: var(--first-color-alt);
 }
+.home__img{
+  margin: auto;
+}
 
 .home__blob{
   width: 200px;
@@ -831,8 +834,7 @@ img{
 }
 
 .project__bg{
-  /* background-color: var(--first-color-second); */
-  background-color: red;
+  background-color: var(--first-color-second);
   padding-top: 3rem;
 }
 
@@ -1037,6 +1039,7 @@ img{
   .home__img{
     order: 1;
     justify-self: center;
+    margin: auto;
   }
 
   .about__container,
