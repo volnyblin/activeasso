@@ -304,6 +304,9 @@ img{
   width: 200px;
   fill: var(--first-color);
 }
+.home__profile{
+  width: 190px;
+}
 
 .home__blob-img{
   height: auto;
@@ -311,6 +314,7 @@ img{
   x: 12%;
   y: 16%;
 }
+
 
 .home__data{
   grid-column: 1/3;
@@ -438,11 +442,10 @@ img{
 }
 
 /*==================== ABOUT ====================*/
-.about__img{
-  width: 200px;
-  border-radius: .5rem;
-  justify-self: center;
-  align-self: center;
+.about__container{
+  max-width: 500px;
+  margin: auto;
+  padding: var(--mb-1);
 }
 
 .about__description{
@@ -454,6 +457,12 @@ img{
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--mb-2-5);
+  flex-wrap: wrap;
+}
+
+.about__digit{
+  flex: 0 0 50%;
+  margin-bottom: 1rem;
 }
 
 .about__info-title{
@@ -543,41 +552,28 @@ img{
   background-color: var(--first-color);
 }
 
-.skills__html{
+.skills__100{
+  width: 100%;
+}
+.skills__90{
   width: 90%;
 }
-.skills__css{
+.skills__80{
   width: 80%;
 }
-.skills__js{
-  width: 60%;
-}
-.skills__react{
-  width: 90%;
-}
-
-.skills__php{
-  width: 80%;
-}
-.skills__node{
+.skills__70{
   width: 70%;
 }
-.skills__firebase{
-  width: 90%;
+.skills__60{
+  width: 60%;
 }
-.skills__python{
-  width: 90%;
+.skills__50{
+  width: 50%;
+}
+.skills__40{
+  width: 40%;
 }
 
-.skills__figma{
-  width: 90%;
-}
-.skills__sketch{
-  width: 85%;
-}
-.skills__photoshop{
-  width: 90%;
-}
 
 .skills__close .skills__list{
   height: 0;
@@ -631,6 +627,10 @@ img{
 .qualification__pair{
   text-align: left;
 }
+.qualification__seemore{
+  cursor: pointer;
+  font-size: var(--smaller-font-size);
+}
 
 .qualification__title{
   font-size: var(--normal-font-size);
@@ -675,6 +675,67 @@ img{
 .qualification__button.qualification__active{
   color: var(--first-color);
 }
+
+
+      /*==================== QUAL - MODAL ====================*/
+      /* The Modal (background) */
+     .popup {
+       display: none; /* Hidden by default */
+       position: fixed; /* Stay in place */
+       z-index: var(--z-modal); /* Sit on top */
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       width: 100%; /* Full width */
+       height: 100%; /* Full height */
+       background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+       padding: 0 1rem;
+     }
+
+     /* Modal Content/Box */
+     .modal-content {
+       background-color: var(--container-color);
+       margin: 15% auto; /* 15% from the top and centered */
+       padding: 1.5rem;
+       border: 1px solid #888;
+       width: 450px; /* Could be more or less, depending on screen size */
+       border-radius: .5rem;
+     }
+
+     /* The Close Button */
+     .close {
+       color: #aaa;
+       float: right;
+       font-size: 28px;
+       font-weight: bold;
+     }
+
+     .close:hover,
+     .close:focus {
+       color: black;
+       text-decoration: none;
+       cursor: pointer;
+     }
+
+     button{
+       background-color: transparent;
+       border: none;
+       color: var(--first-color);
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       cursor: pointer;
+       font-size: var(--small-font-size);
+       transition: .3s;
+     }
+
+     .poparrow__button:hover{
+       transform: translateX(.25rem);
+       transition: .3s;
+     }
+
+
 /*==================== SERVICES ====================*/
 .services__container{
   gap: 1.5rem;
@@ -1009,6 +1070,9 @@ img{
   .home__blob{
     width: 200px;
   }
+  .home__profile{
+    width: 150px;
+  }
 
   .skills__title{
     font-size: var(--normal-font-size);
@@ -1045,8 +1109,10 @@ img{
     order: 1;
     justify-self: center;
   }
+  .home__profile{
+    width: 220px;
+  }
 
-  .about__container,
   .skills__container,
   .portfolio_container,
   .project__container,
@@ -1059,6 +1125,10 @@ img{
     display: grid;
     grid-template-columns: .6fr;
     justify-content: center;
+  }
+
+  .about__digit{
+    flex: 0 0 25%;
   }
 }
 
@@ -1128,7 +1198,7 @@ img{
     column-gap: 5rem;
   }
   .about__img{
-    width: 350px;
+    width: 380px;
   }
   .about__description{
     text-align: initial;
@@ -1137,7 +1207,7 @@ img{
     justify-content: space-between;
   }
   .about__buttons{
-    justify-content: initial;
+    justify-content: center;
   }
 
   .qualification__tabs{
@@ -1193,7 +1263,7 @@ img{
     grid-template-columns: repeat(3,1fr);
   }
   .footer__bg{
-    padding: 3rem 0 3.5rem;
+    padding: 2rem 0 3rem;
   }
   .footer__links{
     flex-direction: row;
