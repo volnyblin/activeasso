@@ -308,6 +308,10 @@ img{
 .home__blob-img{
   height: auto;
   width: 150px;
+  x: 12%;
+  y: 16%;
+  -webkit-mask-position-x: 12%;
+  -webkit-mask-position-y: 16%;
 }
 
 .home__data{
