@@ -310,8 +310,6 @@ img{
   width: 150px;
   x: 12%;
   y: 16%;
-  /* -webkit-mask-position-x: 12%;
-  -webkit-mask-position-y: 16%; */
 }
 
 .home__data{
@@ -1010,6 +1008,9 @@ img{
   }
   .home__blob{
     width: 200px;
+  }
+  .home__blob-img{
+    width: 130px;
   }
 
   .skills__title{
