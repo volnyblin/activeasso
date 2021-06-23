@@ -294,7 +294,10 @@ img{
   color: var(--first-color-alt);
 }
 .home__img{
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 2rem;
 }
 
 .home__blob{
@@ -1039,7 +1042,6 @@ img{
   .home__img{
     order: 1;
     justify-self: center;
-    margin: auto;
   }
 
   .about__container,
