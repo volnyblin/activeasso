@@ -74,7 +74,7 @@ var popup1 = document.getElementById("myModal1");
 var popup_btn1 = document.getElementById("myBtn1");
 var popup_span1 = document.getElementById("close1");
 popup_btn1.onclick = function() {
-  popup1.style.display = "block";
+  popup1.style.display = "flex";
 }
 popup_span1.onclick = function() {
   popup1.style.display = "none";
@@ -88,7 +88,7 @@ var popup2 = document.getElementById("myModal2");
 var popup_btn2 = document.getElementById("myBtn2");
 var popup_span2 = document.getElementById("close2");
 popup_btn2.onclick = function() {
-  popup2.style.display = "block";
+  popup2.style.display = "flex";
 }
 popup_span2.onclick = function() {
   popup2.style.display = "none";
@@ -102,7 +102,7 @@ var popup3 = document.getElementById("myModal3");
 var popup_btn3 = document.getElementById("myBtn3");
 var popup_span3 = document.getElementById("close3");
 popup_btn3.onclick = function() {
-  popup3.style.display = "block";
+  popup3.style.display = "flex";
 }
 popup_span3.onclick = function() {
   popup3.style.display = "none";
@@ -116,7 +116,7 @@ var popup4 = document.getElementById("myModal4");
 var popup_btn4 = document.getElementById("myBtn4");
 var popup_span4 = document.getElementById("close4");
 popup_btn4.onclick = function() {
-  popup4.style.display = "block";
+  popup4.style.display = "flex";
 }
 popup_span4.onclick = function() {
   popup4.style.display = "none";
@@ -130,7 +130,7 @@ var popup5 = document.getElementById("myModal5");
 var popup_btn5 = document.getElementById("myBtn5");
 var popup_span5 = document.getElementById("close5");
 popup_btn5.onclick = function() {
-  popup5.style.display = "block";
+  popup5.style.display = "flex";
 }
 popup_span5.onclick = function() {
   popup5.style.display = "none";
@@ -144,7 +144,7 @@ var popup6 = document.getElementById("myModal6");
 var popup_btn6 = document.getElementById("myBtn6");
 var popup_span6 = document.getElementById("close6");
 popup_btn6.onclick = function() {
-  popup6.style.display = "block";
+  popup6.style.display = "flex";
 }
 popup_span6.onclick = function() {
   popup6.style.display = "none";
