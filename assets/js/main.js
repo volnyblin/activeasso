@@ -241,12 +241,21 @@ const selectedIcon = localStorage.getItem('selected-icon')
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
+
 // We validate if the user previously chose a topic
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
   themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 }
+
+
+
+
+
+
+
+
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
@@ -256,4 +265,32 @@ themeButton.addEventListener('click', () => {
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
+
+    if (getCurrentTheme()=='dark') {
+      document.querySelectorAll(".port-dark").forEach(a=>a.style.display = "flex");
+      document.querySelectorAll(".port-light").forEach(a=>a.style.display = "none");
+      document.querySelectorAll(".portfolio__img").forEach(a=>a.style.backgroundColor = "var(--container-color)");
+    }else{
+      document.querySelectorAll(".port-dark").forEach(a=>a.style.display = "none");
+      document.querySelectorAll(".port-light").forEach(a=>a.style.display = "flex");
+      document.querySelectorAll(".portfolio__img").forEach(a=>a.style.backgroundColor = "white");
+    }
+
+
 })
+
+window.onload = function(){
+  if (getCurrentTheme()=='dark') {
+    document.querySelectorAll(".port-dark").forEach(a=>a.style.display = "flex");
+    document.querySelectorAll(".port-light").forEach(a=>a.style.display = "none");
+    document.querySelectorAll(".portfolio__img").forEach(a=>a.style.backgroundColor = "var(--container-color)");
+  }else{
+    document.querySelectorAll(".port-dark").forEach(a=>a.style.display = "none");
+    document.querySelectorAll(".port-light").forEach(a=>a.style.display = "flex");
+    document.querySelectorAll(".portfolio__img").forEach(a=>a.style.backgroundColor = "white");
+  }
+}
+
+
+
+  // p2.setAttribute('src','assets/img/portfolio2-dark.png');
