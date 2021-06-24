@@ -691,25 +691,31 @@ img{
        height: 100%; /* Full height */
        background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
        padding: 0 1rem;
+       align-items: center;
+       justify-content: center;
      }
 
      /* Modal Content/Box */
      .modal-content {
+       position: relative;
        background-color: var(--container-color);
-       margin: 15% auto; /* 15% from the top and centered */
        padding: 1.5rem;
-       border: 1px solid #888;
-       width: 450px; /* Could be more or less, depending on screen size */
        border-radius: .5rem;
+       width: initial;
      }
 
      /* The Close Button */
      .close {
-       color: #aaa;
+       color: var(--first-color);
        float: right;
-       font-size: 28px;
+       font-size: 1.5rem;
        font-weight: bold;
+       cursor: pointer;
+       position: absolute;
+       top: 1rem;
+       right: 1rem;
      }
+
 
      .close:hover,
      .close:focus {
@@ -1080,6 +1086,9 @@ img{
   .qualification__data{
     gap: .5rem;
   }
+  .popup{
+    padding: 0 .5rem;
+  }
 
   .services__container{
     grid-template-columns: max-content;
@@ -1218,6 +1227,9 @@ img{
   }
   .qualification__sections{
     grid-template-columns: .5fr;
+  }
+  .modal-content {
+    width: 450px;
   }
 
   .services__container{
