@@ -849,11 +849,19 @@ img{
   padding: 0 1.5rem;
 }
 
+.portfolio__img:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+}
+
 .portfolio__img{
   width: 300px;
   border-radius: .5rem;
   justify-self: center;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
 }
+
+
 
 .portfolio__title{
   font-size: var(--h3-font-size);
@@ -899,6 +907,19 @@ img{
 .swiper-pagination-bullet{
   outline: none;
 }
+
+/*Change theme of img*/
+
+.port-dark{
+  display: none;
+}
+
+
+
+
+
+
+
 
 /*==================== PROJECT IN MIND ====================*/
 .project{
@@ -1328,7 +1349,6 @@ img{
   .portfolio__img{
     width: 800px;
     padding: 1rem;
-    background-color: white;
     border-radius: .25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
   }
