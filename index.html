@@ -180,7 +180,7 @@
                       </div>
                     </div>
                     <div class="about__buttons">
-                      <a download ="" href="assets/pdf/CV-Volny-BLIN.pdf" class="button button--flex" target="_blank">
+                      <a download ="" href="assets/pdf/CV-Volny-BLIN.pdf" class="button button--flex" target="_blank" onclick=”_gaq.push([‘_trackEvent’,’Download’,’PDF’,this.href]);”>
                         Télécharger CV<i class="uil uil-download-alt button__icon"></i>
                       </a>
                     </div>
@@ -961,7 +961,7 @@
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
               <h2 class="section__title">Portfolio</h2>
-              <span class="section__subtitle">Mes projets personels</span>
+              <span class="section__subtitle">Mes projets personnels</span>
 
               <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
@@ -971,10 +971,16 @@
                     <img src="assets/img/portfolio1-dark.png" alt="" class="portfolio__img port-dark">
 
                     <div class="portfolio__data">
-                      <h3 class="portfolio__title">Dashboard - Performance de ventes</h3>
-                      <p class="portfolio__description">Partie 1/2</p>
-                      <a class="button button--flex button--small portfolio__button" style="background-color:hsl(var(--hue-color), 69%, 61%)">Power BI</a>
-                      <a class="button button--flex button--small portfolio__button" style="background-color:hsl(var(--hue-color), 69%, 50%)">Projet 1</a>
+                      <h3 class="portfolio__title">Projet 1 - Performance de ventes - 1/2</h3>
+                      <a class="button button--flex button--portfolio" style="background-color:#06444E">
+                        <i class="uil uil-chart tag__icon"></i>Power BI
+                      </a>
+                      <a class="button button--flex button--portfolio" style="background-color:#006E6E">
+                        <i class="uil uil-brackets-curly tag__icon"></i>DAX
+                      </a>
+                      <a class="button button--flex button--portfolio" style="background-color:#365A81">
+                        <i class="uil uil-crosshair tag__icon"></i>Multimédia
+                      </a>
                     </div>
                   </div>
 
@@ -984,10 +990,16 @@
                     <img src="assets/img/portfolio2-dark.png" alt="" class="portfolio__img port-dark">
 
                     <div class="portfolio__data">
-                      <h3 class="portfolio__title">Dashboard - Performance de ventes</h3>
-                      <p class="portfolio__description">Partie 2/2</p>
-                      <a class="button button--flex button--small portfolio__button" style="background-color:hsl(var(--hue-color), 69%, 61%)">Power BI</a>
-                      <a class="button button--flex button--small portfolio__button" style="background-color:hsl(var(--hue-color), 69%, 50%)">Projet 1</a>
+                      <h3 class="portfolio__title">Projet 1 - Performance de ventes - 2/2</h3>
+                      <a class="button button--flex button--portfolio" style="background-color:#06444E">
+                        <i class="uil uil-chart tag__icon"></i>Power BI
+                      </a>
+                      <a class="button button--flex button--portfolio" style="background-color:#006E6E">
+                        <i class="uil uil-brackets-curly tag__icon"></i>DAX
+                      </a>
+                      <a class="button button--flex button--portfolio" style="background-color:#365A81">
+                        <i class="uil uil-crosshair tag__icon"></i>Multimédia
+                      </a>
                     </div>
                   </div>
 
@@ -997,10 +1009,16 @@
                     <img src="assets/img/portfolio3-dark.png" alt="" class="portfolio__img port-dark">
 
                     <div class="portfolio__data">
-                      <h3 class="portfolio__title">Dashboard - Suivi d'activité</h3>
-                      <p class="portfolio__description">Partie 1/2</p>
-                      <a class="button button--flex button--small portfolio__button" style="background-color:hsl(var(--hue-color), 69%, 61%)">Power BI</a>
-                      <a class="button button--flex button--small portfolio__button" style="background-color:hsl(var(--hue-color), 69%, 50%)">Projet 2</a>
+                      <h3 class="portfolio__title">Projet 2 - Suivi de visionnage de films - 1/2</h3>
+                      <a class="button button--flex button--portfolio" style="background-color:#242974">
+                        <i class="uil uil-chart tag__icon"></i>Power BI
+                      </a>
+                      <a class="button button--flex button--portfolio" style="background-color:#23498F">
+                        <i class="uil uil-brackets-curly tag__icon"></i>DAX
+                      </a>
+                      <a class="button button--flex button--portfolio" style="background-color:#2E8BC3">
+                        <i class="uil uil-crosshair tag__icon"></i>Cinéma
+                      </a>
                     </div>
                   </div>
 
@@ -1010,12 +1028,57 @@
                     <img src="assets/img/portfolio4-dark.png" alt="" class="portfolio__img port-dark">
 
                     <div class="portfolio__data">
-                      <h3 class="portfolio__title">Dashboard - Suivi d'activité</h3>
-                      <p class="portfolio__description">Partie 2/2</p>
-                      <a class="button button--flex button--small portfolio__button" style="background-color:hsl(var(--hue-color), 69%, 61%)">Power BI</a>
-                      <a class="button button--flex button--small portfolio__button" style="background-color:hsl(var(--hue-color), 69%, 50%)">Projet 2</a>
+                      <h3 class="portfolio__title">Projet 2 - Suivi de visionnage de films - 2/2</h3>
+                      <a class="button button--flex button--portfolio" style="background-color:#242974">
+                        <i class="uil uil-chart tag__icon"></i>Power BI
+                      </a>
+                      <a class="button button--flex button--portfolio" style="background-color:#23498F">
+                        <i class="uil uil-brackets-curly tag__icon"></i>DAX
+                      </a>
+                      <a class="button button--flex button--portfolio" style="background-color:#2E8BC3">
+                        <i class="uil uil-crosshair tag__icon"></i>Cinéma
+                      </a>
                     </div>
                   </div>
+
+                  <!--==================== PORTFOLIO 5 ====================-->
+                  <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio5.png" alt="" class="portfolio__img port-light">
+                    <img src="assets/img/portfolio5-dark.png" alt="" class="portfolio__img port-dark">
+
+                    <div class="portfolio__data">
+                      <h3 class="portfolio__title">Projet 3 - Performance de ventes</h3>
+                      <a class="button button--flex button--portfolio" style="background-color:#4D9FDE">
+                        <i class="uil uil-chart tag__icon"></i>Metabase
+                      </a>
+                      <a class="button button--flex button--portfolio" style="background-color:#196DC3">
+                        <i class="uil uil-brackets-curly tag__icon"></i>SQL
+                      </a>
+                      <a class="button button--flex button--portfolio" style="background-color:#7171AD">
+                        <i class="uil uil-crosshair tag__icon"></i>Automobile
+                      </a>
+                    </div>
+                  </div>
+
+                  <!--==================== PORTFOLIO 6 ====================-->
+                  <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio6.png" alt="" class="portfolio__img port-light">
+                    <img src="assets/img/portfolio6-dark.png" alt="" class="portfolio__img port-dark">
+
+                    <div class="portfolio__data">
+                      <h3 class="portfolio__title">Projet 4 - Performance de ventes</h3>
+                      <a class="button button--flex button--portfolio" style="background-color:#02723B">
+                        <i class="uil uil-chart tag__icon"></i>Excel
+                      </a>
+                      <a class="button button--flex button--portfolio" style="background-color:#028845">
+                        <i class="uil uil-brackets-curly tag__icon"></i>TCD
+                      </a>
+                      <a class="button button--flex button--portfolio" style="background-color:#538234">
+                        <i class="uil uil-crosshair tag__icon"></i>Restauration
+                      </a>
+                    </div>
+                  </div>
+
                 </div>
 
                 <!--Add arrows-->
@@ -1123,7 +1186,7 @@
               </div>
             </div>
 
-            <p class="footer__copy">&#169; Volny. Tous droits réservés. Mis à jour le 23/06/2021.</p>
+            <p class="footer__copy">&#169; Volny. Tous droits réservés. Mis à jour le 30/06/2021.</p>
 
           </div>
 
