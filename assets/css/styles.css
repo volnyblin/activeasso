@@ -81,16 +81,15 @@ body.dark-theme{
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 
-  --portfolio-color_0: #1D3036; /*== 7 ==*/
-  --portfolio-color_1: #1C2E34; /*== 1 ==*/
-  --portfolio-color_2: #1C2E34; /*== 2 ==*/
-  --portfolio-color_3: #1C2E34; /*== 3 ==*/
-  --portfolio-color_4: #1C2E34; /*== 4 ==*/
-  --portfolio-color_5: #1D3036; /*== 5 ==*/
-  --portfolio-color_6: #1D3036; /*== 6 ==*/
-  --portfolio-color_7: #1D3036; /*== 7 ==*/
-  --portfolio-color_8: #1C2E34; /*== 1 ==*/
-
+  --portfolio-color_0: #172C33; /*== 7 ==*/
+  --portfolio-color_1: #152A31; /*== 1 ==*/
+  --portfolio-color_2: #152A31; /*== 2 ==*/
+  --portfolio-color_3: #152A31; /*== 3 ==*/
+  --portfolio-color_4: #152A31; /*== 4 ==*/
+  --portfolio-color_5: #172C33; /*== 5 ==*/
+  --portfolio-color_6: #172C33; /*== 6 ==*/
+  --portfolio-color_7: #172C33; /*== 7 ==*/
+  --portfolio-color_8: #152A31; /*== 1 ==*/
 }
 
 /*========== Button Dark/Light ==========*/
