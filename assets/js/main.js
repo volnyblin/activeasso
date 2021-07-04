@@ -269,7 +269,11 @@ themeButton.addEventListener('click', () => {
     if (getCurrentTheme()=='dark') {
       document.querySelectorAll(".port-dark").forEach(a=>a.style.display = "flex");
       document.querySelectorAll(".port-light").forEach(a=>a.style.display = "none");
-      document.querySelectorAll(".portfolio__img").forEach(a=>a.style.backgroundColor = "var(--container-color)");
+      // document.querySelectorAll(".portfolio__img").forEach(a=>a.style.backgroundColor = "var(--container-color)");
+      var portfolio_imgs = document.querySelectorAll(".port-dark");
+      for (var i = 0; i < portfolio_imgs.length; i++) {
+        portfolio_imgs[i].style.backgroundColor = "var(--portfolio-color_"+i+")";
+      }
     }else{
       document.querySelectorAll(".port-dark").forEach(a=>a.style.display = "none");
       document.querySelectorAll(".port-light").forEach(a=>a.style.display = "flex");
@@ -283,14 +287,15 @@ window.onload = function(){
   if (getCurrentTheme()=='dark') {
     document.querySelectorAll(".port-dark").forEach(a=>a.style.display = "flex");
     document.querySelectorAll(".port-light").forEach(a=>a.style.display = "none");
-    document.querySelectorAll(".portfolio__img").forEach(a=>a.style.backgroundColor = "var(--container-color)");
+    // document.querySelectorAll(".portfolio__img").forEach(a=>a.style.backgroundColor = "var(--container-color)");
+    var portfolio_imgs = document.querySelectorAll(".port-dark");
+    for (var i = 0; i < portfolio_imgs.length; i++) {
+      portfolio_imgs[i].style.backgroundColor = "var(--portfolio-color_"+i+")";
+    }
+
   }else{
     document.querySelectorAll(".port-dark").forEach(a=>a.style.display = "none");
     document.querySelectorAll(".port-light").forEach(a=>a.style.display = "flex");
     document.querySelectorAll(".portfolio__img").forEach(a=>a.style.backgroundColor = "white");
   }
 }
-
-
-
-  // p2.setAttribute('src','assets/img/portfolio2-dark.png');
